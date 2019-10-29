@@ -75,7 +75,18 @@ fun main(args: Array<String>) {
 //    val get = Single.get()
 
 
-    Cat(Dog()).bark()
+//    Cat(Dog()).bark()
+
+    { x: Int, y: Int ->
+        println("${x + y}")
+    }(1, 3)
+
+    val printMsg = { msg: String ->
+        println(msg)
+    }
+
+//    printMsg.invoke("123")
+    printMsg("456");
 }
 
 interface Animal {
