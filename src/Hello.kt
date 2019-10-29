@@ -56,6 +56,43 @@ fun main(args: Array<String>) {
 //    }
 //
 
+//    StringUtils.isEmpty("")
 
 
+//    Person().printName()
+//    Person().printProgrammer()
+
+//    fun Animal.bark() = "animal"
+//    fun Dog.bark() = "dog"
+//
+//    fun Animal.printBark(anim: Animal) {
+//        println(anim.bark())
+//    }
+//
+//    Animal().printBark(Dog())
+
+
+//    val get = Single.get()
+
+
+    Cat(Dog()).bark()
 }
+
+interface Animal {
+    fun bark()
+}
+
+
+class Dog : Animal {
+    override fun bark() {
+        println("wang wang")
+    }
+}
+
+class Cat(animal: Animal) : Animal by animal
+
+
+//open class Animal
+//
+//class Dog : Animal()
+
