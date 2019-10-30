@@ -9,4 +9,5 @@ public interface AInterface {
 
     void testNum(Integer number);
 
+
 }
