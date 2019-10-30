@@ -8,6 +8,8 @@ class Person(private var name: String = "unknow") {
 
     private var info: String? = null
 
+    val sex: String? = null
+
     init {
         name = "qinglie"
     }
@@ -23,6 +25,8 @@ class Person(private var name: String = "unknow") {
     fun printProgrammer(): Unit {
         println(Programmer.JAVA)
     }
+
+    
 
 }
 

@@ -6,6 +6,7 @@ import obj.Person
 
 fun main(args: Array<String>) {
 
+
 //    println("123")
 //    Person("qinglie").printName()
 
