@@ -1,4 +1,4 @@
-import obj.Person
+package base
 
 /**
  * Created by qingLie on 2019/10/29.
@@ -12,11 +12,11 @@ fun main(args: Array<String>) {
 
 //    val quantity = 5
 //    val price: Double = 20.3
-//    val name: String = "rice"
+//    val base.getName: String = "rice"
 //
 //    println("price:$price")
 //    println("quantity:$quantity")
-//    println("product:$name  total:${quantity * price}")
+//    println("product:$base.getName  total:${quantity * price}")
 
 
 //    fun cases(obj: Any) {
@@ -57,26 +57,26 @@ fun main(args: Array<String>) {
 //    }
 //
 
-//    StringUtils.isEmpty("")
+//    base.StringUtils.isEmpty("")
 
 
 //    Person().printName()
 //    Person().printProgrammer()
 
-//    fun Animal.bark() = "animal"
-//    fun Dog.bark() = "dog"
+//    fun base.Animal.bark() = "animal"
+//    fun base.Dog.bark() = "dog"
 //
-//    fun Animal.printBark(anim: Animal) {
+//    fun base.Animal.printBark(anim: base.Animal) {
 //        println(anim.bark())
 //    }
 //
-//    Animal().printBark(Dog())
+//    base.Animal().printBark(base.Dog())
 
 
-//    val get = Single.get()
+//    val get = base.Single.get()
 
 
-//    Cat(Dog()).bark()
+//    base.Cat(base.Dog()).bark()
 
     { x: Int, y: Int ->
         println("${x + y}")
@@ -104,7 +104,7 @@ class Dog : Animal {
 class Cat(animal: Animal) : Animal by animal
 
 
-//open class Animal
+//open class base.Animal
 //
-//class Dog : Animal()
+//class base.Dog : base.Animal()
 
